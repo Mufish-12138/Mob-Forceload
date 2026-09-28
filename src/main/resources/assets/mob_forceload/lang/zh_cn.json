@@ -1,0 +1,23 @@
+{
+  "mob_forceload.msg.summoned": "已生成并标记：%s（会维持周围 %s 个区块强加载）",
+  "mob_forceload.msg.not_whitelisted": "%s 不在白名单里，没有被标记。想让它也能被标记，就把它的 ID 加进 config/mob_forceload-common.toml 的 mobWhitelist。",
+  "mob_forceload.msg.create_failed": "无法生成 %s。",
+  "mob_forceload.msg.marked": "已标记 %s 个生物。",
+  "mob_forceload.msg.unmarked": "已取消标记 %s 个生物。",
+  "mob_forceload.msg.none": "没有找到符合条件的生物。",
+  "mob_forceload.msg.list.empty": "当前没有被标记的生物。",
+  "mob_forceload.msg.list.header": "被标记的生物（共 %s 个）：",
+  "mob_forceload.msg.list.entry": " - %s，在 %s 的 %s",
+  "mob_forceload.msg.info": "强加载半径：%s 个区块；维持模拟距离：%s；已标记 %s 个生物。",
+  "mob_forceload.msg.on": "开启",
+  "mob_forceload.msg.off": "关闭",
+  "mob_forceload.msg.forceload.added": "已添加区域强加载：方块 X %s ~ %s、Z %s ~ %s（换算为区块 X %s ~ %s、Z %s ~ %s）。只给 %s 个中心区块登记票据，靠每个中心自带的 5x5 辐射交织覆盖整片区域，共 %s 个强加载区块。登记票据不会当场生成地形，辐射圈由游戏后台分批加载；票据每刻登记约 %s 张，预计 %s 秒排完，期间服务器不会卡死。",
+  "mob_forceload.msg.forceload.duplicate": "这个区域已经添加过了：方块 X %s ~ %s、Z %s ~ %s（对应区块 X %s ~ %s、Z %s ~ %s），没有重复添加。",
+  "mob_forceload.msg.forceload.too_large": "区域太大：一次最多支持 %s 个中心区块，这次需要 %s 个。请缩小范围后重试。",
+  "mob_forceload.msg.forceload.limit": "拒绝建立区域强加载：本次计划强加载 %s 个区块，加上已有的 %s 个，合计会达到 %s 个，超过配置上限 %s 个。请缩小范围，或者调大 config/mob_forceload-common.toml 里的 maxForceLoadedChunks（默认 1000）。",
+  "mob_forceload.msg.forceload.huge": "提示：这次要长期强加载 %s 个区块，全部生效后服务器每刻都要运算它们，会持续吃 CPU。如果只是想防止生物被卸载，其实不需要圈这么大，建议只圈住生物实际活动的范围。",
+  "mob_forceload.msg.forceload.removed": "已移除 %s 个区域强加载范围，相关区块不再被强制加载。",
+  "mob_forceload.msg.forceload.none": "当前没有用 /mfforceload add 添加过的区域强加载。",
+  "mob_forceload.msg.forceload.list.header": "已添加的区域强加载（共 %s 个）：",
+  "mob_forceload.msg.forceload.list.entry": " - %s：区块 X %s ~ %s、Z %s ~ %s（方块 X %s ~ %s、Z %s ~ %s）"
+}

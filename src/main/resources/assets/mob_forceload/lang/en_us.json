@@ -1,0 +1,23 @@
+{
+  "mob_forceload.msg.summoned": "Summoned and marked %s (keeping %s chunks force-loaded around it).",
+  "mob_forceload.msg.not_whitelisted": "%s is not in the whitelist and was not marked. Add its ID to mobWhitelist in config/mob_forceload-common.toml.",
+  "mob_forceload.msg.create_failed": "Could not create %s.",
+  "mob_forceload.msg.marked": "Marked %s entities.",
+  "mob_forceload.msg.unmarked": "Unmarked %s entities.",
+  "mob_forceload.msg.none": "No matching entity was found.",
+  "mob_forceload.msg.list.empty": "No entity is marked right now.",
+  "mob_forceload.msg.list.header": "Marked entities (%s):",
+  "mob_forceload.msg.list.entry": " - %s at %s in %s",
+  "mob_forceload.msg.info": "Force-load radius: %s chunks; keep simulation distance: %s; marked entities: %s.",
+  "mob_forceload.msg.on": "ON",
+  "mob_forceload.msg.off": "OFF",
+  "mob_forceload.msg.forceload.added": "Added region force-load: blocks X %s..%s, Z %s..%s (chunks X %s..%s, Z %s..%s). Only the %s centre chunks get tickets; each ticket radiates over its own 5x5, together covering %s chunks. Registering tickets does not generate terrain on the spot - the radiation area is loaded by the game in the background. About %s tickets per tick, roughly %s seconds to queue them, without freezing the server.",
+  "mob_forceload.msg.forceload.duplicate": "That region is already force-loaded: blocks X %s..%s, Z %s..%s (chunks X %s..%s, Z %s..%s).",
+  "mob_forceload.msg.forceload.too_large": "Region too large: at most %s centre chunks per command, this one needs %s. Shrink it and try again.",
+  "mob_forceload.msg.forceload.limit": "Region force-load rejected: this command plans %s chunks; with %s already force-loaded the total would be %s, over the configured limit of %s. Shrink the region, or raise maxForceLoadedChunks in config/mob_forceload-common.toml (default 1000).",
+  "mob_forceload.msg.forceload.huge": "Heads-up: this keeps %s chunks force-loaded for good. Once applied, the server has to tick all of them every tick, which costs a lot of CPU over time. If you only want to stop mobs from being unloaded, the region does not need to be this big.",
+  "mob_forceload.msg.forceload.removed": "Removed %s force-loaded region(s); those chunks are no longer force-loaded.",
+  "mob_forceload.msg.forceload.none": "No force-loaded region has been added with /mfforceload add.",
+  "mob_forceload.msg.forceload.list.header": "Force-loaded regions (%s):",
+  "mob_forceload.msg.forceload.list.entry": " - %s: chunks X %s..%s, Z %s..%s (blocks X %s..%s, Z %s..%s)"
+}
